@@ -5,6 +5,8 @@ services:
     build: .
     volumes:
       - .:/tmp/pagila-hw
+    ports:
+      - "5433:5432"
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=pass
